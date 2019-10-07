@@ -1,0 +1,23 @@
+<div class="page__layout" [ngClass]="{'--menuOpen' : sidebarStatus.main}">
+  <div class="page__menu" *ngIf="sidebarStatus.main">
+    Main sidebar
+  </div>
+
+  <div class="page__header">
+    <app-header></app-header>
+  </div>
+  <div class="page__main">
+    <div class="page__sidebar-left" *ngIf="sidebarStatus.left">
+      Left Sidebar
+    </div>
+    <div class="page__main-content">
+      <ng-content></ng-content>
+    </div>
+    <div class="page__sidebar-right" *ngIf="sidebarStatus.right">
+      Right Sidebar
+    </div>
+  </div>
+  <div class="page__footer">
+    app-footer
+  </div>
+</div>

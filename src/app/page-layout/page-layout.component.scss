@@ -1,0 +1,36 @@
+.page__layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "header  header  header  header  header"
+    "main    main    main    main    main"
+    "main    main    main    main    main"
+    "main    main    main    main    main"
+    "footer  footer  footer  footer  footer";
+
+  .page__menu {
+    grid-area: mainmenu;
+  }
+
+  .page__header {
+    grid-area: header;
+    width: 100vw;
+  }
+
+  .page__main {
+    grid-area: main;
+  }
+
+  .page__footer {
+    grid-area: footer;
+  }
+}
+//
+.--menuOpen {
+  grid-template-areas:
+  "mainmenu header  header  header  header"
+  "mainmenu main    main    main    main  "
+  "mainmenu main    main    main    main  "
+  "mainmenu main    main    main    main  "
+  "mainmenu footer  footer  footer  footer";
+}
