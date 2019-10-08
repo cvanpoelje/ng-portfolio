@@ -1,0 +1,76 @@
+@import "../../variables.scss";
+
+
+.tools-carousel__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  min-height: 40vh;
+  background: linear-gradient($primary 0%, #694F5D 100%);
+  border-radius: 0 0 50px 50px;
+  margin: 10px 0;
+}
+
+.tools-carousel__container :first-child {
+  border-bottom-left-radius: 50%;
+}
+
+.tools-carousel__container :last-child {
+  border-bottom-right-radius: 50%;
+}
+
+.tools-carousel__tool {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 3px;
+
+  background: linear-gradient($black 0%, transparent 100%);
+  transition: all 300ms;
+
+  .tool__logo {
+    height: 100%;
+    width: auto;
+    min-height:100px;
+    min-width:100px;
+    padding-bottom: 30px;
+  }
+}
+
+.tools-carousel__tool:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.2 em;
+  img {
+    height: 110%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .tools-carousel__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom:30px;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}

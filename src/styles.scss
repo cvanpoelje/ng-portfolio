@@ -1,10 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  font-family: 'Montserat', sans-serif;
+  color: white;
+}
 
 html, body {
   padding: 0;
   margin: 0;
-}
-
-article {
-  padding: 30px;
+  background-color: $secondary;
+  overflow-x: hidden;
 }

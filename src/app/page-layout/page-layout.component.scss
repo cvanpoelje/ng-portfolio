@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .page__layout {
   display: grid;
   min-height: 100vh;
@@ -14,11 +16,15 @@
 
   .page__header {
     grid-area: header;
-    width: 100vw;
+    background-color: $primary;
+    width: 100%;
   }
 
   .page__main {
     grid-area: main;
+    background: linear-gradient($primary 0, $secondary 10%, $third 100%);
+    margin: 0 auto;
+    padding: 0 10vw;
   }
 
   .page__footer {
@@ -28,9 +34,33 @@
 //
 .--menuOpen {
   grid-template-areas:
-  "mainmenu header  header  header  header"
-  "mainmenu main    main    main    main  "
-  "mainmenu main    main    main    main  "
-  "mainmenu main    main    main    main  "
-  "mainmenu footer  footer  footer  footer";
+    "mainmenu header  header  header  header"
+    "mainmenu main    main    main    main  "
+    "mainmenu main    main    main    main  "
+    "mainmenu main    main    main    main  "
+    "mainmenu footer  footer  footer  footer";
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .page__main {
+    max-width: 100vw;
+    background-color:yellow
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .page__main {
+    max-width: 100vw;
+    background-color:yellow;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
 }

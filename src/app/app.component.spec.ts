@@ -1,9 +1,11 @@
+import { ToolsCarouselComponent } from './tools-carousel/tools-carousel.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -16,6 +18,8 @@ describe('AppComponent', () => {
         PageLayoutComponent,
         HeaderComponent,
         HomePageComponent,
+        NavigationComponent,
+        ToolsCarouselComponent
       ],
     }).compileComponents();
   }));
