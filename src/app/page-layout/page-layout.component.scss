@@ -63,4 +63,10 @@
 
 /* Large desktop */
 @media (min-width: 1200px) {
+  .page__layout{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
 }
