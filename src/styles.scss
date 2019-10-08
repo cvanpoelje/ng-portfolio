@@ -1,15 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-@import './variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-*{
-  font-family: 'Montserat', sans-serif;
+* {
+  font-family: "Montserat", sans-serif;
   color: white;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   background-color: $secondary;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $flame;
+  border-radius: 10px;
 }
